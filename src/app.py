@@ -9,13 +9,6 @@ from flask import Flask, render_template, abort, request
 app = Flask(__name__)
 
 
-class MemeEngine:
-    pass
-
-
-meme = MemeEngine()
-
-
 def setup():
     """ Load all resources """
 

@@ -1,5 +1,11 @@
+import argparse
 import os
 import random
+
+from MemeEngine.meme_engine import MemeEngine
+from QuoteEngine.ingestor import Ingestor
+from QuoteEngine.quote_model import QuoteModel
+
 
 # @TODO Import your Ingestor and MemeEngine classes
 
@@ -17,7 +23,8 @@ def generate_meme(path=None, body=None, author=None):
 
         img = random.choice(imgs)
     else:
-        img = path[0]
+        # img = path[0]
+        img = path
 
     if body is None:
         quote_files = ['./_data/DogQuotes/DogQuotesTXT.txt',
@@ -38,11 +45,16 @@ def generate_meme(path=None, body=None, author=None):
     path = meme.make_meme(img, quote.body, quote.author)
     return path
 
-
+# python3 src/meme.py --path "./_data/photos/dog/xander_1.jpg" --body "Hello, Berlin" --author "Arefe"
 if __name__ == "__main__":
-    # @TODO Use ArgumentParser to parse the following CLI arguments
-    # path - path to an image file
-    # body - quote body to add to the image
-    # author - quote author to add to the image
-    args = None
-    print(generate_meme(args.path, args.body, args.author))
+
+    # python3 src/meme.py --path "src/_data/photos/dog/xander_1.jpg" --body "Hello, world" --author "OpenAI"
+    parser = argparse.ArgumentParser(description='Generate meme.')
+    parser.add_argument('--path', type=str, help='path to an image file')
+    parser.add_argument('--body', type=str, help='quote body to add to the image')
+    parser.add_argument('--author', type=str, help='quote author to add to the image')
+    args = parser.parse_args()
+
+    path = generate_meme(args.path, args.body, args.author)
+    # path = generate_meme("./_data/photos/dog/xander_1.jpg", "Hello World!", "Arefe")
+    print(path)
