@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0299b2e2-9d42-43d4-acc5-bdb4330bbba2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/csv-editor.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/meme_14378.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/meme_21392.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/meme.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/meme.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/meme_16058.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,29 +58,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Flask server.Flask (app.py).executor": "Run",
-    "Flask server.Flask (src/app.py).executor": "Debug",
-    "Flask server.app.executor": "Debug",
-    "Python.app.executor": "Debug",
-    "Python.ingestor.executor": "Debug",
-    "Python.meme.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/chaklader/PycharmProjects/UdacityND-MemeGenerator/src/_data",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Flask server.Flask (app.py).executor&quot;: &quot;Run&quot;,
+    &quot;Flask server.Flask (src/app.py).executor&quot;: &quot;Debug&quot;,
+    &quot;Flask server.app.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.app.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.ingestor.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.meme.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/chaklader/PycharmProjects/UdacityND-MemeGenerator/src/_data&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/_data" />
@@ -173,7 +176,8 @@
       <option name="presentableId" value="Default" />
       <updated>1709785496958</updated>
       <workItem from="1709785504199" duration="3645000" />
-      <workItem from="1709792012016" duration="11264000" />
+      <workItem from="1709792012016" duration="11585000" />
+      <workItem from="1709816968207" duration="906000" />
     </task>
     <task id="LOCAL-00001" summary="Meme-Generator: Added README.md file to the project">
       <option name="closed" value="true" />
@@ -199,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709814410580</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Meme-Generator: added a README.md file to the project">
+      <option name="closed" value="true" />
+      <created>1709815546340</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709815546340</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +222,8 @@
     <MESSAGE value="Meme-Generator: Added README.md file to the project" />
     <MESSAGE value="Meme-Generator: completed the Quote engine and Meme generator engine" />
     <MESSAGE value="Meme-Generator: solve the tmp path issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Meme-Generator: solve the tmp path issue" />
+    <MESSAGE value="Meme-Generator: added a README.md file to the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Meme-Generator: added a README.md file to the project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

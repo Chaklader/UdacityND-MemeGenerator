@@ -46,8 +46,7 @@ def generate_meme(path=None, body=None, author=None):
     return path
 
 
-def get_tmp_path()-> str:
-
+def get_tmp_path() -> str:
     current_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(current_dir)
     tmp_folder_path = os.path.join(project_root, 'tmp')
@@ -55,10 +54,9 @@ def get_tmp_path()-> str:
     return tmp_folder_path
 
 
-# python3 src/meme.py --path "./_data/photos/dog/xander_1.jpg" --body "Hello, Berlin" --author "Arefe"
+#  need to run from the /src:
+# python3 meme.py --path "./_data/photos/dog/xander_1.jpg" --body "Hello, Berlin" --author "Arefe"
 if __name__ == "__main__":
-
-    # python3 src/meme.py --path "src/_data/photos/dog/xander_1.jpg" --body "Hello, world" --author "OpenAI"
     parser = argparse.ArgumentParser(description='Generate meme.')
     parser.add_argument('--path', type=str, help='path to an image file')
     parser.add_argument('--body', type=str, help='quote body to add to the image')
@@ -66,5 +64,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     path = generate_meme(args.path, args.body, args.author)
-    # path = generate_meme("./_data/photos/dog/xander_1.jpg", "Hello World!", "Arefe")
     print(path)
