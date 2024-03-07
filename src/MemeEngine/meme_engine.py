@@ -29,6 +29,8 @@ class MemeEngine:
             if img_path is None or not os.path.exists(img_path):
                 raise ValueError("Invalid image path")
 
+            print(f"Output directory: {self.output_dir}")
+
             img = Image.open(img_path)
 
             ratio = width / float(img.size[0])

@@ -7,9 +7,6 @@ from QuoteEngine.ingestor import Ingestor
 from QuoteEngine.quote_model import QuoteModel
 
 
-# @TODO Import your Ingestor and MemeEngine classes
-
-
 def generate_meme(path=None, body=None, author=None):
     """ Generate a meme given an path and a quote """
     img = None
@@ -41,9 +38,22 @@ def generate_meme(path=None, body=None, author=None):
             raise Exception('Author Required if Body is Used')
         quote = QuoteModel(body, author)
 
-    meme = MemeEngine('./tmp')
+    tmp_folder_path = get_tmp_path()
+
+    meme = MemeEngine(tmp_folder_path)
+
     path = meme.make_meme(img, quote.body, quote.author)
     return path
+
+
+def get_tmp_path()-> str:
+
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(current_dir)
+    tmp_folder_path = os.path.join(project_root, 'tmp')
+
+    return tmp_folder_path
+
 
 # python3 src/meme.py --path "./_data/photos/dog/xander_1.jpg" --body "Hello, Berlin" --author "Arefe"
 if __name__ == "__main__":
