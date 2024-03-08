@@ -6,6 +6,7 @@ from flask import Flask, render_template, abort, request, send_from_directory
 
 from QuoteEngine.ingestor import Ingestor
 from MemeEngine.meme_engine import MemeEngine
+from utils import get_tmp_path
 
 app = Flask(__name__)
 
@@ -59,7 +60,8 @@ def meme_form():
 
 @app.route('/tmp/<path:filename>')
 def serve_meme(filename):
-    return send_from_directory('tmp', filename)
+    # return send_from_directory('tmp', filename)
+    return send_from_directory(get_tmp_path(), filename)
 
 @app.route('/create', methods=['POST'])
 def meme_post():
@@ -81,13 +83,6 @@ def meme_post():
     os.remove(tmp)
 
     return render_template('meme.html', path=path)
-
-
-def get_tmp_path() -> str:
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    tmp_folder_path = os.path.join(current_dir, 'tmp')
-
-    return tmp_folder_path
 
 
 if __name__ == "__main__":

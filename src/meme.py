@@ -5,6 +5,7 @@ import random
 from MemeEngine.meme_engine import MemeEngine
 from QuoteEngine.ingestor import Ingestor
 from QuoteEngine.quote_model import QuoteModel
+from utils import get_tmp_path
 
 
 def generate_meme(path=None, body=None, author=None):
@@ -47,14 +48,6 @@ def generate_meme(path=None, body=None, author=None):
 
     path = meme.make_meme(img, quote.body, quote.author)
     return path
-
-
-def get_tmp_path() -> str:
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.dirname(current_dir)
-    tmp_folder_path = os.path.join(project_root, 'tmp')
-
-    return tmp_folder_path
 
 
 if __name__ == "__main__":

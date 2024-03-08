@@ -1,6 +1,8 @@
 .idea
 .idea/
 
+src/tmp
+src/tmp/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
