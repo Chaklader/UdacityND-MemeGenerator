@@ -16,7 +16,7 @@ class IngestorInterface(ABC):
         Check if the ingestor can handle the given file type.
 
         :param path: The path to the file.
-        :return: True if the ingestor can handle the file type, False otherwise.
+        :return: True if the ingestor can handle the file or False
         """
         pass
 

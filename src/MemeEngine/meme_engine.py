@@ -12,7 +12,7 @@ class MemeEngine:
         """
         Initialize a MemeEngine object with the given output directory.
 
-        :param output_dir: The directory where the generated memes will be saved.
+        :param output_dir: The directory to save meme.
         """
         self.output_dir = output_dir
 
@@ -20,8 +20,7 @@ class MemeEngine:
             os.makedirs(output_dir)
 
     def make_meme(self, img_path, text, author, width=500) -> str:
-        """
-        Generate a meme by loading an image, resizing it, adding text, and saving the modified image.
+        """Generate a meme by loading an image and saving the modified image.
 
         :param img_path: The path to the input image.
         :param text: The body of the quote to be added to the image.
@@ -43,10 +42,20 @@ class MemeEngine:
 
             draw = ImageDraw.Draw(img)
             font = ImageFont.truetype(lilita_one_font_path(), size=20)
-            text_position = (random.randint(30, width - 200), random.randint(30, height - 50))
-            draw.text(text_position, f'"{text}"\n- {author}', font=font, fill='white')
+            text_position = (
+                random.randint(30, width - 200),
+                random.randint(30, height - 50)
+            )
+            draw.text(
+                text_position,
+                f'"{text}"\n- {author}',
+                font=font,
+                fill='white'
+            )
 
-            output_path = os.path.join(self.output_dir, f"meme_{random.randint(0, 100000)}.jpg")
+            output_path = os.path.join(
+                self.output_dir, f"meme_{random.randint(0, 100000)}.jpg"
+            )
             img.save(output_path)
 
             return output_path

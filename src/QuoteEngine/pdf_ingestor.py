@@ -29,7 +29,8 @@ class PDFIngestor(IngestorInterface):
         :return: A list of QuoteModel objects.
         """
         quotes = []
-        text = subprocess.check_output(["pdftotext", "-layout", path, "-"], universal_newlines=True)
+        text = subprocess.check_output(["pdftotext", "-layout", path, "-"],
+                                       universal_newlines=True)
         for line in text.splitlines():
             line = line.strip()
             if line:

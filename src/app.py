@@ -21,7 +21,9 @@ def setup():
                    './_data/DogQuotes/DogQuotesCSV.csv']
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    absolute_quote_paths = [os.path.join(base_dir, path) for path in quote_files]
+    absolute_quote_paths = [os.path.join(base_dir, path)
+                            for path in quote_files
+                            ]
 
     quotes = []
     for f in absolute_quote_paths:
