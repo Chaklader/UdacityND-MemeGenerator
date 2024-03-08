@@ -7,9 +7,6 @@
     <list default="true" id="0299b2e2-9d42-43d4-acc5-bdb4330bbba2" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/tmp/meme_55656.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/tmp/meme_60827.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/meme.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/meme.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +174,7 @@
       <workItem from="1709785504199" duration="3645000" />
       <workItem from="1709792012016" duration="11585000" />
       <workItem from="1709816968207" duration="925000" />
-      <workItem from="1709863521561" duration="1476000" />
+      <workItem from="1709863521561" duration="1783000" />
     </task>
     <task id="LOCAL-00001" summary="Meme-Generator: Added README.md file to the project">
       <option name="closed" value="true" />
@@ -219,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709817886868</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Meme-Generator: Package your Application si completed but there is a bug for meme generation and needs attention">
+      <option name="closed" value="true" />
+      <created>1709865298380</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709865298380</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,37 +237,11 @@
     <MESSAGE value="Meme-Generator: solve the tmp path issue" />
     <MESSAGE value="Meme-Generator: added a README.md file to the project" />
     <MESSAGE value="Meme-Generator: updated README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Meme-Generator: updated README.md" />
+    <MESSAGE value="Meme-Generator: Package your Application si completed but there is a bug for meme generation and needs attention" />
+    <option name="LAST_COMMIT_MESSAGE" value="Meme-Generator: Package your Application si completed but there is a bug for meme generation and needs attention" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/app.py</url>
-          <line>47</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/QuoteEngine/txt_ingestor.py</url>
-          <line>29</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/QuoteEngine/txt_ingestor.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/QuoteEngine/txt_ingestor.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/app.py</url>
-          <line>80</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -275,7 +254,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/UdacityND_MemeGenerator$ingestor.coverage" NAME="ingestor Coverage Results" MODIFIED="1709806486587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/QuoteEngine" />
     <SUITE FILE_PATH="coverage/UdacityND_MemeGenerator$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1709785653753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/UdacityND_MemeGenerator$Flask__src_app_py_.coverage" NAME="Flask (src/app.py) Coverage Results" MODIFIED="1709864868934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/UdacityND_MemeGenerator$Flask__src_app_py_.coverage" NAME="Flask (src/app.py) Coverage Results" MODIFIED="1709865151191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UdacityND_MemeGenerator$meme.coverage" NAME="meme Coverage Results" MODIFIED="1709814371540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/UdacityND_MemeGenerator$app.coverage" NAME="app Coverage Results" MODIFIED="1709787292922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
