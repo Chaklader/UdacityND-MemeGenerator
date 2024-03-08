@@ -2,7 +2,7 @@ import random
 import os
 import requests
 
-from flask import Flask, render_template, abort, request
+from flask import Flask, render_template, abort, request, send_from_directory
 
 from QuoteEngine.ingestor import Ingestor
 from MemeEngine.meme_engine import MemeEngine
@@ -57,6 +57,9 @@ def meme_form():
     """ User input for meme information """
     return render_template('meme_form.html')
 
+@app.route('/tmp/<path:filename>')
+def serve_meme(filename):
+    return send_from_directory('tmp', filename)
 
 @app.route('/create', methods=['POST'])
 def meme_post():

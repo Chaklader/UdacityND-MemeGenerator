@@ -32,13 +32,14 @@ class MemeEngine:
             print(f"Output directory: {self.output_dir}")
 
             img = Image.open(img_path)
+            lilita_one_font_path = font_path()
 
             ratio = width / float(img.size[0])
             height = int(ratio * float(img.size[1]))
-            img = img.resize((width, height), Image.Resampling.LANCZOS)
+            img = img.resize((width, height), Image.ANTIALIAS)
 
             draw = ImageDraw.Draw(img)
-            font = ImageFont.truetype("./_data/fonts/LilitaOne-Regular.ttf", size=20)
+            font = ImageFont.truetype(lilita_one_font_path, size=20)
             text_position = (random.randint(30, width - 200), random.randint(30, height - 50))
             draw.text(text_position, f'"{text}"\n- {author}', font=font, fill='white')
 
@@ -49,3 +50,9 @@ class MemeEngine:
 
         except Exception as e:
             print(f"Error generating meme: {str(e)}")
+
+
+def font_path() -> str:
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+    return os.path.join(base_dir, "_data/fonts/LilitaOne-Regular.ttf")
