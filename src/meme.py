@@ -8,7 +8,10 @@ from QuoteEngine.quote_model import QuoteModel
 
 
 def generate_meme(path=None, body=None, author=None):
-    """ Generate a meme given an path and a quote """
+    """ Generate a meme by a given path and quote
+    # python3 meme.py --path "./_data/photos/dog/xander_1.jpg" --body "Hello, Berlin" --author "Arefe"
+    """
+
     img = None
     quote = None
 
@@ -54,8 +57,6 @@ def get_tmp_path() -> str:
     return tmp_folder_path
 
 
-#  need to run from the /src:
-# python3 meme.py --path "./_data/photos/dog/xander_1.jpg" --body "Hello, Berlin" --author "Arefe"
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Generate meme.')
     parser.add_argument('--path', type=str, help='path to an image file')
