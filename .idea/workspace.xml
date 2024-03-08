@@ -5,18 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0299b2e2-9d42-43d4-acc5-bdb4330bbba2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/tmp/meme_1554.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/meme_21843.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/meme_21865.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/meme_23222.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/meme_28416.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/meme_39671.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/meme_39834.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/meme_56627.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/meme_57069.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/meme_62647.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/meme_79381.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/meme_82835.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/meme_83042.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/meme_85252.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/meme_87708.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/meme_93040.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/meme_95507.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/meme_20811.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/meme_28092.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/meme_3069.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/meme_4928.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/meme_58162.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/meme_58226.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/meme_66910.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/meme_7330.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/meme_74542.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/meme_77429.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/meme_96100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MemeEngine/meme_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/MemeEngine/meme_engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/meme_16507.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/meme_6533.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/meme_25443.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/meme_37950.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/meme_43044.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/meme_73242.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/meme_51996.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/meme_34829.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/meme_53338.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/meme_8003.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/meme_66356.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709892560515</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Meme-Generator: provided an dummy HTML page when URL is valid but not an image">
+      <option name="closed" value="true" />
+      <created>1709892981455</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709892981455</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +309,8 @@
     <MESSAGE value="Meme-Generator: minor cleanup of the directories" />
     <MESSAGE value="Meme-Generator: make changes needed for pydocstyle and pycodestyle" />
     <MESSAGE value="Meme-Generator: provided an dummy HTML page when URL is invalid" />
-    <option name="LAST_COMMIT_MESSAGE" value="Meme-Generator: provided an dummy HTML page when URL is invalid" />
+    <MESSAGE value="Meme-Generator: provided an dummy HTML page when URL is valid but not an image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Meme-Generator: provided an dummy HTML page when URL is valid but not an image" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -301,7 +326,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/UdacityND_MemeGenerator$ingestor.coverage" NAME="ingestor Coverage Results" MODIFIED="1709806486587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/QuoteEngine" />
     <SUITE FILE_PATH="coverage/UdacityND_MemeGenerator$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1709785653753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/UdacityND_MemeGenerator$Flask__src_app_py_.coverage" NAME="Flask (src/app.py) Coverage Results" MODIFIED="1709892619618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/UdacityND_MemeGenerator$Flask__src_app_py_.coverage" NAME="Flask (src/app.py) Coverage Results" MODIFIED="1709895462730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UdacityND_MemeGenerator$meme.coverage" NAME="meme Coverage Results" MODIFIED="1709814371540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/UdacityND_MemeGenerator$app.coverage" NAME="app Coverage Results" MODIFIED="1709787292922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>

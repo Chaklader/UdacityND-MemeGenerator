@@ -88,7 +88,8 @@ def meme_post():
 
         os.remove(tmp)
 
-    except (requests.exceptions.ConnectionError, requests.exceptions.HTTPError, requests.exceptions.MissingSchema, ValueError):
+    except (requests.exceptions.ConnectionError, requests.exceptions.HTTPError,
+            requests.exceptions.MissingSchema, ValueError):
         return render_template('invalid.html')
 
     return render_template('meme.html', path=path)

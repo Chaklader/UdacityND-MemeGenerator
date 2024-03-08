@@ -79,6 +79,13 @@ python3 app.py
 * Create a custom meme after Filling in the form with the image URL, quote body, and quote author  and click the "Create Meme" 
 * button to generate the custom meme.
 
+
+<h3>Corner case</h3>
+
+The UI works fine with the long text as well and it a very long text is provided, it will wrap the text:
+
+![text wrap](src/static/text_wrap.png)
+
 License
 This project is licensed under the MIT License. See the LICENSE file for more information.
 
