@@ -78,18 +78,18 @@ def meme_post():
 
     try:
         response = requests.get(img_url, allow_redirects=True)
-        response.raise_for_status()
-    except (requests.exceptions.ConnectionError, requests.exceptions.HTTPError, requests.exceptions.MissingSchema):
-        print('Something went wrong while fetching image.')
+        response.raise_for_status()  # Raise an exception for HTTP errors
+
+        tmp = os.path.join(tmp_folder_path, 'tmp.jpg')
+        open(tmp, 'wb').write(response.content)
+
+        meme = MemeEngine(tmp_folder_path)
+        path = meme.make_meme(tmp, body, author)
+
+        os.remove(tmp)
+
+    except (requests.exceptions.ConnectionError, requests.exceptions.HTTPError, requests.exceptions.MissingSchema, ValueError):
         return render_template('invalid.html')
-
-    tmp = os.path.join(tmp_folder_path, 'tmp.jpg')
-    open(tmp, 'wb').write(response.content)
-
-    meme = MemeEngine(tmp_folder_path)
-    path = meme.make_meme(tmp, body, author)
-
-    os.remove(tmp)
 
     return render_template('meme.html', path=path)
 
