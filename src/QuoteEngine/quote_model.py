@@ -1,4 +1,9 @@
+"""Quote Model module defining the QuoteModel class."""
+
+
 class QuoteModel:
+    """A class representing a quote."""
+
     def __init__(self, body, author):
         """
         Initialize a QuoteModel object.

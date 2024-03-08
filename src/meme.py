@@ -1,3 +1,5 @@
+"""Meme module for generating memes."""
+
 import argparse
 import os
 import random
@@ -9,10 +11,7 @@ from utils import get_tmp_path
 
 
 def generate_meme(path=None, body=None, author=None):
-    """ Generate a meme by a given path and quote
-    # python3 meme.py --path "./_data/photos/dog/xander_1.jpg" --body "Hello, Berlin" --author "Arefe"
-    """
-
+    """Generate a meme by a given path and quote."""
     img = None
     quote = None
 

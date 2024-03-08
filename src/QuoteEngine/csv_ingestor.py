@@ -1,3 +1,5 @@
+"""CSV Ingestor module for parsing quotes from CSV files."""
+
 from typing import List
 
 import pandas as pd
@@ -7,9 +9,7 @@ from .quote_model import QuoteModel
 
 
 class CSVIngestor(IngestorInterface):
-    """
-    A class for ingesting quotes from CSV files.
-    """
+    """A class for ingesting quotes from CSV files."""
 
     @classmethod
     def can_ingest(cls, path: str) -> bool:

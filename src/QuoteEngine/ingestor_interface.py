@@ -1,3 +1,5 @@
+"""Ingestor Interface module defining an abstract base class for ingestors."""
+
 from abc import ABC, abstractmethod
 from typing import List
 
@@ -5,9 +7,7 @@ from .quote_model import QuoteModel
 
 
 class IngestorInterface(ABC):
-    """
-    An abstract base class for ingestors.
-    """
+    """An abstract base class for ingestors."""
 
     @classmethod
     @abstractmethod

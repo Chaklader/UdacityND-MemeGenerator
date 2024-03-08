@@ -1,12 +1,16 @@
+"""Meme Engine module for generating memes."""
+
 from PIL import Image, ImageDraw, ImageFont
 import random
 import os
 
 
 class MemeEngine:
+    """A class for generating memes."""
+
     def __init__(self, output_dir):
         """
-        Initializes a MemeEngine object with the given output directory.
+        Initialize a MemeEngine object with the given output directory.
 
         :param output_dir: The directory where the generated memes will be saved.
         """
@@ -17,7 +21,7 @@ class MemeEngine:
 
     def make_meme(self, img_path, text, author, width=500) -> str:
         """
-        Generates a meme by loading an image, resizing it, adding text, and saving the modified image.
+        Generate a meme by loading an image, resizing it, adding text, and saving the modified image.
 
         :param img_path: The path to the input image.
         :param text: The body of the quote to be added to the image.
@@ -52,6 +56,11 @@ class MemeEngine:
 
 
 def lilita_one_font_path() -> str:
+    """
+    Get the path to the Lilita One font file.
+
+    :return: The path to the Lilita One font file.
+    """
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
     return os.path.join(base_dir, "_data/fonts/LilitaOne-Regular.ttf")

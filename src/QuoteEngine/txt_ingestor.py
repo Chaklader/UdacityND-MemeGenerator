@@ -1,3 +1,5 @@
+"""Text Ingestor module for parsing quotes from TXT files."""
+
 from typing import List
 
 from .ingestor_interface import IngestorInterface
@@ -5,9 +7,7 @@ from .quote_model import QuoteModel
 
 
 class TextIngestor(IngestorInterface):
-    """
-    A class for ingesting quotes from TXT files.
-    """
+    """A class for ingesting quotes from TXT files."""
 
     @classmethod
     def can_ingest(cls, path: str) -> bool:

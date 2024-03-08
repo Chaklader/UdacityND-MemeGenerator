@@ -1,3 +1,5 @@
+"""Ingestor module for ingesting quotes from various file types."""
+
 from typing import List
 
 from .csv_ingestor import CSVIngestor
@@ -7,10 +9,9 @@ from .pdf_ingestor import PDFIngestor
 from .quote_model import QuoteModel
 from .txt_ingestor import TextIngestor
 
+
 class Ingestor(IngestorInterface):
-    """
-    A class for ingesting quotes from various file types.
-    """
+    """A class for ingesting quotes from various file types."""
 
     ingestors = [CSVIngestor, DocxIngestor, PDFIngestor, TextIngestor]
 

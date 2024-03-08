@@ -1,3 +1,5 @@
+"""PDF Ingestor module for parsing quotes from PDF files."""
+
 import subprocess
 from typing import List
 
@@ -6,9 +8,7 @@ from .quote_model import QuoteModel
 
 
 class PDFIngestor(IngestorInterface):
-    """
-    A class for ingesting quotes from PDF files.
-    """
+    """A class for ingesting quotes from PDF files."""
 
     @classmethod
     def can_ingest(cls, path: str) -> bool:

@@ -1,3 +1,5 @@
+"""DOCX Ingestor module for parsing quotes from DOCX files."""
+
 from typing import List
 
 import docx
@@ -7,9 +9,7 @@ from .quote_model import QuoteModel
 
 
 class DocxIngestor(IngestorInterface):
-    """
-    A class for ingesting quotes from DOCX files.
-    """
+    """A class for ingesting quotes from DOCX files."""
 
     @classmethod
     def can_ingest(cls, path: str) -> bool:
