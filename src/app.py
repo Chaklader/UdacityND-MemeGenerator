@@ -76,7 +76,13 @@ def meme_post():
     body = request.form.get('body')
     author = request.form.get('author')
 
-    response = requests.get(img_url, allow_redirects=True)
+    try:
+        response = requests.get(img_url, allow_redirects=True)
+        response.raise_for_status()
+    except (requests.exceptions.ConnectionError, requests.exceptions.HTTPError, requests.exceptions.MissingSchema):
+        print('Something went wrong while fetching image.')
+        return render_template('invalid.html')
+
     tmp = os.path.join(tmp_folder_path, 'tmp.jpg')
     open(tmp, 'wb').write(response.content)
 
